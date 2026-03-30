@@ -98,3 +98,8 @@ jobs:
             -var="image_tag=${IMAGE_TAG}" \
             -var="github_actor=${{ github.actor }}"
         working-directory: terraform
+
+        git add .
+git commit -m "Fix: lowercase image name for GHCR"
+git push
+
